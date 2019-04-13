@@ -8,3 +8,11 @@
 то вводятся эти символы. Программа должна вывести на экран любой
 символ алфавита от 'a' до 'f' включительно.
 """
+import random
+a = input('Начальный символ: ')
+b = input('Конечный символ: ')
+if str.isdigit(a):
+    print(random.randint(int(a), int(b)+1))
+    print(random.uniform(int(a), int(b)+1))
+else:
+    print(chr(random.randint(ord(a), ord(b)+1)))
